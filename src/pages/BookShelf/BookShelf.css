@@ -1,0 +1,17 @@
+
+.empty {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  width: 100%;
+  text-align: center;
+  padding: 50px;
+  opacity: 0.9;
+  line-height: 3;
+}
+.shelf{
+  padding: 3rem;
+}
+#animationContainer {
+  transform: scale(0.3);
+  transform-origin: top;
+}

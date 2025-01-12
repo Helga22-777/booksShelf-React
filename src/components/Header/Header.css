@@ -1,0 +1,26 @@
+.header-content{
+  min-height: 75vh;
+  background: linear-gradient(rgba(101, 62, 21, 0.635), rgba(206, 224, 150, 0.3)), url("../../images/library-1542.jpg") center/cover no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.header-title{
+  font-size: 4.2rem;
+  padding: 20px;
+  
+}
+.header-text{
+  margin-top: -1.8rem;
+  margin-bottom: 2.8rem;
+  opacity: 0.8;
+  max-width: 770px;
+}
+
+@media screen and (max-width: 600px) {
+  .header-title{
+    font-size: 3.2rem;
+    padding: 10px;
+  }
+}

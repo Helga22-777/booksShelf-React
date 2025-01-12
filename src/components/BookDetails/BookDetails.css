@@ -1,0 +1,41 @@
+.buy, .back {
+  margin: 20px 10px;
+  padding: 10px;
+}
+.buy:hover {
+  border-radius: 15px;
+  color: var(--black-color);
+  background: linear-gradient( rgba(206, 224, 150, 0.3), rgba(101, 62, 21, 0.635)), center/cover no-repeat;
+}
+.back:hover {
+  border-radius: 15px;
+  color: var(--black-color);
+  background: linear-gradient(rgba(101, 62, 21, 0.635), rgba(206, 224, 150, 0.3)), center/cover no-repeat;
+}
+.book-item-details {
+  width: 100%;
+  padding: 3rem 2rem;
+  border-radius: 4px;
+  background-color: var(--white-color);
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 5px 15px 0px;
+  transition: var(--transition);
+  gap: 30px;
+}
+.book-item-details img {
+  width: 250px;
+  height: auto;
+  margin: 0 auto;
+  object-fit: cover;
+}
+@media screen and (max-width: 600px) {
+  .book-item-details {
+    flex-direction: column;
+  }
+  .img-details {
+    width: 100%;
+  }
+  .img-details img {
+    width: 100%;
+    object-fit: cover;
+  }
+}

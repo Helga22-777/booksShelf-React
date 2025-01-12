@@ -1,0 +1,59 @@
+.booklist-content {
+  padding: 3rem 0;
+  background-color: #f8f9fa;
+  gap: 3rem;
+}
+.book-item{
+  padding: 3rem 2rem;
+  border-radius: 4px;
+  background-color: var(--white-color);
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 5px 15px 0px;
+  transition: var(--transition);
+}
+.book-item:hover {
+  box-shadow: rgba(0, 0, 0, 0.20) 0px 5px 15px 0px;
+}
+.book-item img{
+  max-width: 180px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.book-item-info {
+  opacity: 0.9;
+  margin-top: 3rem;
+}
+.book-item-info:not(h2) span:last-child{
+  font-style: italic;
+}
+
+.heart * {
+  fill: silver;
+}
+.heart-active * {
+  fill: tomato;
+}
+.heart:hover * {
+  fill: tomato;
+}
+
+@media screen and (min-width: 600px){
+  .booklist-content{
+      grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (min-width: 992px){
+  .booklist-content{
+      grid-template-columns: repeat(3, 1fr);
+  }
+  .book-item img {
+    max-width: 130px;
+  }
+}
+@media screen and (min-width: 992px){
+  .booklist-content{
+      grid-template-columns: repeat(4, 1fr);
+  }
+  .book-item img {
+    max-width: 120px;
+  }
+}

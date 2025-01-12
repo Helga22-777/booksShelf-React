@@ -1,0 +1,16 @@
+.search {
+  width: 30%;
+}
+.search input::placeholder {
+  opacity: 0.9;
+}
+
+
+@media screen and (max-width: 992px) {
+  .search {
+    width: 50%;
+  }
+  .search input {
+    width: 100%;
+  }
+}
